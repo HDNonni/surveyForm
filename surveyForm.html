@@ -1,25 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Noto+Serif+KR" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="surveyForm.css">
     <title>Survey Form</title>
 </head>
-<body>
-    <h1 id = "title">Survey Form</h1>
-    <p id= "description">What is your Favorite Computer Language?</p>
-    <form id = "survey-form">
-        <label for = "name">Please Enter your First and Last Names</label>
-        <input id = "name" type = "text" name = "Name" required>
-        <br>
-        <label for = "email"> Please Enter a Valid Email</label>
-        <input id = "email" type = "email" name = "email" required>
-        <br>
-        <label for ="number">What is Your Age?</label>
-        <input id = "number" type = "number" name = "Age"required>
-    </form>
 
-    <script src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<body>
+    <div id="wholeForm">
+        <h1 id="title">Survey Form</h1>
+        <hr>
+        <p id="description">What is your Favorite Computer Language?</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Please Enter your First and Last Names</label>
+            <input id="name" type="text" placeholder=" Please Enter Your Name" name="Name" required>
+            <br>
+            <label for="email" id="email-label"> Please Enter a Valid Email</label>
+            <input id="email" type="email" placeholder=" Please Enter Your Email" name="email" required>
+            <br>
+            <label for="number" id="number-label">What is Your Age?</label>
+            <input id="number" type="number" placeholder="Please Enter Your Age" name="Age" required min="1" max="99">
+            <br>
+            <select id="dropdown">
+                <option>Choose How To Learn</option>
+                <option>Physical School</option>
+                <option>Online</option>
+                <option>On The Job</option>
+            </select>
+            <div>
+                <p> Please Select How Long You Spend a Day Coding</p>
+
+                <input type="radio" name="hours" value="less than 1 hour">
+                <label for="hours">less than 1 hour </label>
+                <br>
+
+                <input type="radio" name="hours" value="1-2 hours">
+                <label for="hours1">1-2 hours </label>
+                <br>
+
+                <input type="radio" name="hours" value="3-5 hours">
+                <label for="hours2">3-5 hours </label>
+                <br>
+
+                <input type="radio" name="hours" value="more than 5 hours">
+                <label for="hours3">More than 5 hours</label>
+            </div>
+            <div>
+                <p>What Do You Spend Your Time Learning?</p>
+                <input type="checkbox" name="learning" value="html">
+                <label for="type">HTML</label>
+                <br>
+                <input type="checkbox" name="learning" value="css3">
+                <label for="type">CSS3</label>
+                <br>
+                <input type="checkbox" name="learning" value="javaScript">
+                <label for="type">javaScript</label>
+                <br>
+                <input type="checkbox" name="learning" value="React js">
+                <label for="type">React js</label>
+                <br>
+                <input type="checkbox" name="learning" value="c++">
+                <label for="type">C++</label>
+                <br>
+                <input type="checkbox" name="learning" value="ruby">
+                <label for="type">Ruby</label>
+                <br>
+                <input type="checkbox" name="learning" value="php">
+                <label for="type">PHP</label>
+                <br>
+                <input type="checkbox" name="learning" value="front">
+                <label for="type">Front End Only</label>
+                <br>
+                <input type="checkbox" name="learning" value="back">
+                <label for="type">Back End Only</label>
+                <br>
+                <input type="checkbox" name="learning" value="both">
+                <label for="type">Full Stack</label>
+            </div>
+            <div>
+                <p>Help others on their coding journey by telling us what helps you learn best</p>
+                <textarea rows="4" cols="50">
+                Enter Comments Here..
+            </textarea>
+            </div>
+            <input id="submit" type="submit" value="Send Request">
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>

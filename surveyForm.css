@@ -1,0 +1,32 @@
+input:invalid{
+    background-color: rgba(255, 215, 215, 0.836);
+}
+input:valid{
+    background-color: lightgreen;
+}
+body{
+    background-color:lightgray;
+    line-height: 1.8;
+    font-family: 'Noto Serif KR', sans-serif;
+}
+#title{
+    text-align: center;
+    
+}
+#wholeForm{
+    background-color: aquamarine;
+    margin :60px;
+    padding-left: 15px;
+    font-size: 24px;
+    border-radius:10px;
+}
+#description{
+    text-align: center;
+    text-decoration: underline;
+    font-size:29px;
+}
+#submit{
+    padding:10px;
+    border-radius:12px;
+    margin:0 0 4px 350px;
+}
